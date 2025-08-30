@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://Tsega-Get.github.io/portfolio",
-  "private": false,
+  "homepage": "https://tsega-get.github.io/portfolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
