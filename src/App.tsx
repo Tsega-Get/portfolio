@@ -1,32 +1,30 @@
-import { useState } from "react";
-import "./App.css";
+import "./App.css"; // You can add some main app styles here
+
+// Import the layout components
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+
+// Import the page sections
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          {"-->"}
-        </a>
-        <a href="https://react.dev" target="_blank">
-          {"-->"}
-        </a>
-      </div>
-      <h1>New work round</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    // Use a main container to wrap everything
+    <div className="app-container">
+      <Navbar />
+      <main className="main-content">
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
