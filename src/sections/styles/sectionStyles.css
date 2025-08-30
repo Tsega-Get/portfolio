@@ -6,7 +6,6 @@
 
 /* Inner container to center content */
 .section {
-  /* max-width: 960px; */
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -25,7 +24,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem; /* Remove top/bottom padding for hero to truly center */
 }
 
 .hero-section h1 {
@@ -59,7 +57,11 @@
     margin-bottom: 2rem;
 }
 .about-section  p {
- max-width: 600px;
+  max-width: 600px;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.about-me-subtitle p {
   padding: 1rem;
   border-radius: 8px;
 }
