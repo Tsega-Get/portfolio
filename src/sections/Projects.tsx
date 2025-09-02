@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import { projectData } from "../data/projects";
 import type { Project } from "../data/projects";
 
-import "./styles/sectionStyles.css";
-
 const Projects = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [projects, setProjects] = useState<Project[]>([]);

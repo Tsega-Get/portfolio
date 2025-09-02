@@ -1,5 +1,3 @@
-import "./styles/sectionStyles.css";
-
 const Hero = () => {
   return (
     <section id="home" className="section hero-section">
