@@ -1,37 +1,39 @@
-import "./App.css"; // You can add some main app styles here
+import { BrowserRouter as Router } from "react-router-dom";
+import "./App.css";
 
-// Import the layout components
-// import Navbar from "./components/layout/Navbar";
+// Import layout components
+import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 
 // Import the page sections
-import Hero from "./sections/Hero";
 import About from "./sections/About";
-import Projects from "./sections/Projects";
+import Experiance from "./sections/Experiance";
 import Contact from "./sections/Contact";
-import Navbar from "./components/layout/Navbar";
+import Home from "./pages/Home";
+import Tech from "./components/technologies/Teck";
 
 const App = () => {
   return (
-    // Use a main container to wrap everything
-    <div className=" bg-primary">
-      <section className="m-12 items-center justify-center text-center text-3xl p-12 md:p-14 lg:p-16 xl:p-20">
-        <div className="bg-hero-pattern h-screen bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
-        </div>
-        <div className="relative z-0  h-screen">
+    <Router>
+      <div className="bg-primary relative z-0">
+        <Navbar />
+        {/* Each section needs an 'id' that matches the Navbar links */}
+        <section id="home" className="relative z-0 h-screen">
+          <Home />
+        </section>
+        <section id="about" className="relative z-0 ">
           <About />
-        </div>{" "}
-        <div className="relative z-0  h-screen">
-          <Projects />
-        </div>{" "}
-        <div className="relative z-0  h-screen">
+        </section>
+        <section id="experiance">
+          <Experiance />
+          <Tech />
+        </section>
+        <section id="contact">
           <Contact />
-        </div>
+        </section>
         <Footer />
-      </section>
-    </div>
+      </div>
+    </Router>
   );
 };
 

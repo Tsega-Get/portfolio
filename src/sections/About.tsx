@@ -8,14 +8,16 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const About = () => {
   return (
-    <div id="about">
-      <motion.div variants={textVariant()}>
+    <div
+      className={`mt-20 pb-14 ${styles.paddingX} max-w-7xl mx-auto py-16 sm:py-24`}
+    >
+      <motion.div variants={textVariant(0.5)}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn("up", "tween", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         I am a passionate developer with a love for creating efficient,
