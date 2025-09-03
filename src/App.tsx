@@ -11,6 +11,7 @@ import Experiance from "./sections/Experiance";
 import Contact from "./sections/Contact";
 import Home from "./pages/Home";
 import Tech from "./components/technologies/Teck";
+import Projects from "./sections/Projects";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <section id="experiance">
           <Experiance />
           <Tech />
+          <Projects />
         </section>
         <section id="contact">
           <Contact />

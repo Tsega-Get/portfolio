@@ -16,6 +16,7 @@
     "@emailjs/browser": "^4.4.1",
     "@react-three/drei": "^9.122.0",
     "@react-three/fiber": "^8.18.0",
+    "@splinetool/viewer": "^1.10.54",
     "framer-motion": "^12.23.12",
     "gh-pages": "^6.3.0",
     "maath": "^0.10.8",
