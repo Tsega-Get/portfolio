@@ -19,6 +19,7 @@ import {
   sql,
   mongo,
   ts,
+  portfolio,
 } from "../assets";
 
 export const navLinks = [
@@ -42,6 +43,10 @@ export const services = [
   { title: "Frontend Development", icon: frontendIcon },
   { title: "Database Design", icon: databaseIcon },
   { title: "DevOps / CI-CD", icon: devopsIcon },
+];
+export const projectsImages = [
+  { name: "Python", image: python },
+  { name: "Portfolio", image: portfolio },
 ];
 
 export const technologies = [

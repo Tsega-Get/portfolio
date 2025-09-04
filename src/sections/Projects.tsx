@@ -31,11 +31,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full flex flex-col"
       >
         <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt={`Project: ${name}`}
-            className="w-full h-full object-cover rounded-2xl"
-          />
+          <div className=" inset-0 bg-opacity-50 rounded-2xl z-0 p-16">
+            <img
+              src={image}
+              alt={`Project: ${name}`}
+              className="w-full h-full object-cover rounded-2xl"
+            />
+          </div>
           <div className="absolute inset-0 flex justify-end m-3">
             <a
               href={source_code_link}
@@ -45,7 +47,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             >
               {/* You can use an icon here, e.g., from react-icons */}
               <img
-                src="/github.png"
+                src="portfolio/src/assets/github.png"
                 alt="GitHub"
                 className="w-1/2 h-1/2 object-contain"
               />

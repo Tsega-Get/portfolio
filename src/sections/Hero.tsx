@@ -30,6 +30,7 @@ const Hero = () => {
         </div>
 
         {/* Directly use the spline-viewer */}
+        {/* @ts-expect-error */}
         <spline-viewer url="https://prod.spline.design/dfS1u48OjIBqHrpd/scene.splinecode"></spline-viewer>
       </div>
     </section>

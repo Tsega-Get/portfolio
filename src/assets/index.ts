@@ -14,6 +14,9 @@ import frontendIcon from "./services/frontend.svg";
 import databaseIcon from "./services/database.svg";
 import devopsIcon from "./services/devops.svg";
 
+//project images
+import portfolio from "./projects/portfolio.png";
+
 // Import tech logos
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -63,4 +66,5 @@ export {
   sql,
   mongo,
   ts,
+  portfolio,
 };

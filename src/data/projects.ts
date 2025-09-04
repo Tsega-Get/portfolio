@@ -1,4 +1,5 @@
 // This interface defines the "blueprint" for a project object.
+
 export interface Project {
   id: number;
   name: string;
@@ -23,8 +24,8 @@ export const projects: Project[] = [
       { name: "django", color: "text-green-500" },
       { name: "mantine", color: "text-pink-500" },
     ],
-    image: "/projects/nexus.png", // Example path
-    source_code_link: "https://github.com/",
+    image: "portfolio/assets/projects/portfolio.png", // Example path
+    source_code_link: "#",
   },
   {
     id: 2,
@@ -34,10 +35,10 @@ export const projects: Project[] = [
     tags: [
       { name: "Vue js", color: "text-blue-500" },
       { name: "mongo db", color: "text-green-500" },
-      { name: "beautyfy", color: "text-pink-500" },
+      { name: "beautify", color: "text-pink-500" },
     ],
-    image: "/projects/garment-erp.png", // Example path
-    source_code_link: "https://github.com/",
+    image: "portfolio/assets/projects/portfolio.png", // Example path
+    source_code_link: "#",
   },
   {
     id: 3,
@@ -49,8 +50,8 @@ export const projects: Project[] = [
       { name: "mysql", color: "text-green-500" },
       { name: "css", color: "text-pink-500" },
     ],
-    image: "/projects/cbhi.png", // Example path
-    source_code_link: "https://github.com/",
+    image: "portfolio/assets/projects/portfolio.png", // Example path
+    source_code_link: "#",
   },
   {
     id: 4,
@@ -62,8 +63,8 @@ export const projects: Project[] = [
       { name: "mysql", color: "text-green-500" },
       { name: "api", color: "text-pink-500" },
     ],
-    image: "/projects/info-desk.png", // Example path
-    source_code_link: "https://github.com/",
+    image: "portfolio/assets/projects/portfolio.png", // Example path
+    source_code_link: "#",
   },
   {
     id: 5,
@@ -75,7 +76,7 @@ export const projects: Project[] = [
       { name: "typescript", color: "text-green-500" },
       { name: "tailwind", color: "text-pink-500" },
     ],
-    image: "/projects/portfolio.png", // Example path
-    source_code_link: "https://github.com/",
+    image: "portfolio/assets/projects/portfolio.png", // Example path
+    source_code_link: "https://github.com/Tsega-Get/portfolio",
   },
 ];

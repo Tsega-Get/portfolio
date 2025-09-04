@@ -15,10 +15,15 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link
               smooth
-              to="/#home" // 2. Point to the #home ID
+              to="#home" // 2. Point to the #home ID
               className="text-2xl font-bold text-white"
               onClick={closeMobileMenu}
             >
+              <img
+                src="portfolio/public/face.png"
+                alt="Logo"
+                className="inline h-8 w-8"
+              />
               ME
             </Link>
           </div>
@@ -28,28 +33,28 @@ const Navbar = () => {
             <div className="ml-10 flex items-baseline space-x-4">
               <Link
                 smooth
-                to="/#about"
+                to="#about"
                 className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
               >
                 About
               </Link>
               <Link
                 smooth
-                to="/#experiance"
+                to="#experiance"
                 className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Experiance
               </Link>
               <Link
                 smooth
-                to="/#contact"
+                to="#contact"
                 className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Contact
               </Link>
               <Link
                 smooth
-                to="/#resume"
+                to="#resume"
                 className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Resume
