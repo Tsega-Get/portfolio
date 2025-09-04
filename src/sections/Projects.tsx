@@ -7,6 +7,7 @@ import { projects } from "../data/projects";
 import type { Project } from "../data/projects";
 // Import your animation variants if you have them in a separate file
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
+import { github } from "../assets";
 
 // Define the types for the ProjectCard props
 interface ProjectCardProps extends Project {
@@ -47,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             >
               {/* You can use an icon here, e.g., from react-icons */}
               <img
-                src="portfolio/src/assets/github.png"
+                src={github}
                 alt="GitHub"
                 className="w-1/2 h-1/2 object-contain"
               />

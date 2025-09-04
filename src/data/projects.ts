@@ -1,5 +1,6 @@
 // This interface defines the "blueprint" for a project object.
 
+import { portfolio } from "../assets";
 export interface Project {
   id: number;
   name: string;
@@ -24,7 +25,7 @@ export const projects: Project[] = [
       { name: "django", color: "text-green-500" },
       { name: "mantine", color: "text-pink-500" },
     ],
-    image: "portfolio/assets/projects/portfolio.png", // Example path
+    image: portfolio, // Example path
     source_code_link: "#",
   },
   {
@@ -37,7 +38,7 @@ export const projects: Project[] = [
       { name: "mongo db", color: "text-green-500" },
       { name: "beautify", color: "text-pink-500" },
     ],
-    image: "portfolio/assets/projects/portfolio.png", // Example path
+    image: portfolio,
     source_code_link: "#",
   },
   {
@@ -50,7 +51,7 @@ export const projects: Project[] = [
       { name: "mysql", color: "text-green-500" },
       { name: "css", color: "text-pink-500" },
     ],
-    image: "portfolio/assets/projects/portfolio.png", // Example path
+    image: portfolio,
     source_code_link: "#",
   },
   {
@@ -63,7 +64,7 @@ export const projects: Project[] = [
       { name: "mysql", color: "text-green-500" },
       { name: "api", color: "text-pink-500" },
     ],
-    image: "portfolio/assets/projects/portfolio.png", // Example path
+    image: portfolio,
     source_code_link: "#",
   },
   {
@@ -76,7 +77,7 @@ export const projects: Project[] = [
       { name: "typescript", color: "text-green-500" },
       { name: "tailwind", color: "text-pink-500" },
     ],
-    image: "portfolio/assets/projects/portfolio.png", // Example path
+    image: portfolio,
     source_code_link: "https://github.com/Tsega-Get/portfolio",
   },
 ];

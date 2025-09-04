@@ -1,6 +1,7 @@
 import { useState } from "react";
 // 1. Import HashLink instead of Link
 import { HashLink as Link } from "react-router-hash-link";
+import { face } from "../../assets";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,11 +20,7 @@ const Navbar = () => {
               className="text-2xl font-bold text-white"
               onClick={closeMobileMenu}
             >
-              <img
-                src="portfolio/public/face.png"
-                alt="Logo"
-                className="inline h-8 w-8"
-              />
+              <img src={face} alt="me" className="inline h-8 w-8" />
               ME
             </Link>
           </div>

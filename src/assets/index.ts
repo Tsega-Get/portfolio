@@ -16,6 +16,7 @@ import devopsIcon from "./services/devops.svg";
 
 //project images
 import portfolio from "./projects/portfolio.png";
+import face from "./face.png";
 
 // Import tech logos
 import css from "./tech/css.png";
@@ -67,4 +68,5 @@ export {
   mongo,
   ts,
   portfolio,
+  face,
 };
