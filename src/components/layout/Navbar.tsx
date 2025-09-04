@@ -17,11 +17,13 @@ const Navbar = () => {
             <Link
               smooth
               to="#home" // 2. Point to the #home ID
-              className="text-2xl font-bold text-white"
+              className="flex items-center gap-3 text-2xl font-bold text-white"
               onClick={closeMobileMenu}
             >
-              <img src={face} alt="me" className="inline h-8 w-8" />
-              ME
+              <div className="relative inline-flex items-center justify-center rounded-full bg-[radial-gradient(circle,white,transparent_50%)] p-1">
+                <img src={face} alt="me" className="h-8 w-8 object-cover" />
+              </div>
+              <div>ME</div>
             </Link>
           </div>
 
