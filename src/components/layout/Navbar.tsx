@@ -39,10 +39,10 @@ const Navbar = () => {
               </Link>
               <Link
                 smooth
-                to="#experiance"
+                to="#experience"
                 className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
               >
-                Experiance
+                Experience
               </Link>
               <Link
                 smooth
@@ -110,11 +110,11 @@ const Navbar = () => {
             </Link>
             <Link
               smooth
-              to="/#experiance"
+              to="/#experience"
               onClick={closeMobileMenu}
               className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
             >
-              Experiance
+              Experience
             </Link>
             <Link
               smooth

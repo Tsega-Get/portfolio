@@ -87,19 +87,20 @@ const Contact = () => {
 
     setLoading(true);
 
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    const templateParams = {
+      from_name: form.name,
+      to_name: import.meta.env.VITE_RECEIVER_NAME,
+      from_email: form.email,
+      to_email: import.meta.env.VITE_RECEIVER_EMAIL,
+      message: form.message,
+    };
+
     emailjs
-      .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Tsega", // Change this to your name
-          from_email: form.email,
-          to_email: "tsega.get.grace@gmail.com", // Change this to your email
-          message: form.message,
-        },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
+      .send(serviceID, templateID, templateParams, publicKey)
       .then(() => {
         setLoading(false);
         setConfirmation(

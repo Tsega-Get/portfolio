@@ -7,7 +7,7 @@ import Footer from "./components/layout/Footer";
 
 // Import the page sections
 import About from "./sections/About";
-import Experiance from "./sections/Experiance";
+import Experience from "./sections/Experience";
 import Contact from "./sections/Contact";
 import Home from "./pages/Home";
 import Tech from "./components/technologies/Teck";
@@ -25,8 +25,8 @@ const App = () => {
         <section id="about" className="relative z-0 ">
           <About />
         </section>
-        <section id="experiance">
-          <Experiance />
+        <section id="experience">
+          <Experience />
           <Tech />
           <Projects />
         </section>

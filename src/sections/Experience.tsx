@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { experiences } from "../data/experiance";
-import type { Experience } from "../data/experiance";
+import { experiences } from "../data/experience";
+import type { Experience } from "../data/experience";
 
 // Import timeline components and styles
 import {
@@ -12,9 +12,9 @@ import "react-vertical-timeline-component/style.min.css";
 // Import an icon for the timeline markers
 import { FaCode } from "react-icons/fa";
 
-const Experiance = () => {
+const Experience = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [experiance, setworkExps] = useState<Experience[]>([]);
+  const [experience, setworkExps] = useState<Experience[]>([]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -26,26 +26,26 @@ const Experiance = () => {
 
   if (isLoading) {
     return (
-      <section id="experiance" className="bg-transparent py-20 text-center">
-        <p className="text-xl text-gray-100">Loading experiance...</p>
+      <section id="experience" className="bg-transparent py-20 text-center">
+        <p className="text-xl text-gray-100">Loading experience...</p>
       </section>
     );
   }
 
   return (
-    <section id="experiance" className="--color-black-100 py-16 sm:py-24">
+    <section id="experience" className="--color-black-100 py-16 sm:py-24">
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <p className="font-mono font-medium text-center text-gray-950 dark:text-white">
           What i have done so far!
         </p>
         <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-500 to-gray-100 bg-clip-text text-transparent sm:text-5xl">
-          Work Experiance
+          Work Experience
         </h2>
 
         {/* The Vertical Timeline */}
         <VerticalTimeline>
-          {experiance.map((workExp, index) => (
+          {experience.map((workExp, index) => (
             <VerticalTimelineElement
               key={index}
               className="vertical-timeline-element--work"
@@ -85,4 +85,4 @@ const Experiance = () => {
   );
 };
 
-export default Experiance;
+export default Experience;

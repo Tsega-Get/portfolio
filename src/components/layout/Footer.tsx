@@ -1,10 +1,7 @@
-import "./styles/footer.css"; // You can add some footer specific styles here
-
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
   return (
-    <footer className="footer">
-      <p>&copy; {currentYear} ME. All rights reserved.</p>
+    <footer className="w-full bg-gray-800 text-gray-400 text-center p-4">
+      <p>&copy; {new Date().getFullYear()} ME. All rights reserved.</p>
     </footer>
   );
 };
