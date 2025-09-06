@@ -7,7 +7,7 @@ import Footer from "./components/layout/Footer";
 
 // Import the page sections
 import About from "./sections/About";
-import Experience from "./sections/Experience";
+import ExperienceSection from "./sections/Experience";
 import Contact from "./sections/Contact";
 import Home from "./pages/Home";
 import Tech from "./components/technologies/Teck";
@@ -26,7 +26,7 @@ const App = () => {
           <About />
         </section>
         <section id="experience">
-          <Experience />
+          <ExperienceSection />
           <Tech />
           <Projects />
         </section>

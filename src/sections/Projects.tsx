@@ -29,7 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         tiltMaxAngleY={15}
         scale={1.05}
         transitionSpeed={450}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full flex flex-col"
+        className="bg-gray-800 p-5 rounded-2xl sm:w-[360px] w-full h-full flex flex-col bg-gradient-to-b from-purple-600/20 to-blue-500/20 border border-purple-500/50"
       >
         <div className="relative w-full h-[230px]">
           <div className=" inset-0 bg-opacity-50 rounded-2xl z-0 p-16">
@@ -56,7 +56,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5 z-2">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
@@ -78,16 +78,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
 const Projects = () => {
   return (
-    <section
-      id="projects"
-      className="mt-20 pb-14  max-w-7xl mx-auto py-16 sm:py-24"
-    >
+    <section id="projects" className="mt-20">
       <motion.section
         variants={staggerContainer(0.1, 0.1)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
-        className="py-16"
+        viewport={{ once: false, amount: 0.1 }}
+        className="py-16 px-4 sm:px-16"
       >
         <motion.div variants={textVariant()}>
           <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
@@ -125,7 +122,4 @@ const Projects = () => {
   );
 };
 
-// If you have a SectionWrapper HOC, use it like this.
-// Otherwise, just use the standard export.
-// export default SectionWrapper(Projects, "work");
 export default Projects;

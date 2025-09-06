@@ -29,7 +29,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full green-pink-gradient p-px rounded-[20px] shadow-card"
     >
-      <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+      <div className=" bg-gray-800 rounded-3xl shadow-2xl shadow-purple-500/20 ring-1 ring-purple-600/50 py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
         <img
           src={icon}
           alt={title} // Use the title for more descriptive alt text

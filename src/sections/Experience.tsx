@@ -12,7 +12,7 @@ import "react-vertical-timeline-component/style.min.css";
 // Import an icon for the timeline markers
 import { FaCode } from "react-icons/fa";
 
-const Experience = () => {
+const ExperienceSection = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [experience, setworkExps] = useState<Experience[]>([]);
 
@@ -50,32 +50,36 @@ const Experience = () => {
               key={index}
               className="vertical-timeline-element--work"
               contentStyle={{
-                background: "#1d1836",
-                color: "#fff",
+                background: "#1f2937",
+                color: "#e6e6e6",
                 boxShadow:
-                  "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+                  "0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.5)",
               }}
-              contentArrowStyle={{ borderRight: "7px solid  #1d1836" }}
+              contentArrowStyle={{ borderRight: "7px solid  #1f2937" }}
               date={workExp.date}
               iconStyle={{ background: "rgb(59, 130, 246)", color: "#fff" }}
               icon={<FaCode />}
             >
               {/* workExp Card Content */}
-              <h3 className="text-2xl font-semibold text-gray-900">
-                {workExp.title}
-              </h3>
-              <p className="mt-2 font-normal text-gray-600">{workExp.points}</p>
+              <div className=" bg-gradient-to-l rounded-xl from-purple-500/10">
+                <h3 className="text-2xl font-semibold bg-gradient-to-r from-blue-300 to-gray-100 bg-clip-text text-transparent">
+                  {workExp.title}
+                </h3>
+                <p className="mt-2 font-normal text-gray-400">
+                  {workExp.points}
+                </p>
 
-              {/* workExp Links */}
-              <div className="mt-4 flex flex-wrap gap-4">
-                <a
-                  href={workExp.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-blue-500 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-600 transition-colors duration-300"
-                >
-                  website
-                </a>
+                {/* workExp Links */}
+                <div className="mt-4 flex flex-wrap gap-4">
+                  <a
+                    href={workExp.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-blue-500 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-600 transition-colors duration-300"
+                  >
+                    website
+                  </a>
+                </div>
               </div>
             </VerticalTimelineElement>
           ))}
@@ -85,4 +89,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default ExperienceSection;

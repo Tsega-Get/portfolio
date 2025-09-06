@@ -44,7 +44,7 @@ const InputField = ({
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+      className="bg-gray-900 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
       rows={Component === "textarea" ? 7 : undefined}
     />
   </label>
@@ -126,11 +126,8 @@ const Contact = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "tween", duration: 0.8, ease: "easeOut" }}
-          className="bg-black-100 p-8 rounded-2xl w-full max-w-3xl mx-auto"
+          className="bg-gray-800 p-8 rounded-2xl w-full max-w-3xl mx-auto"
         >
-          <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
-            Get in touch
-          </p>
           <h3 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
             Contact Me.
           </h3>
