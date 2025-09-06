@@ -11,6 +11,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 // Import an icon for the timeline markers
 import { FaCode } from "react-icons/fa";
+import { openNewTab } from "../assets";
 
 const ExperienceSection = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -77,7 +78,12 @@ const ExperienceSection = () => {
                     rel="noopener noreferrer"
                     className="inline-block bg-blue-500 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-600 transition-colors duration-300"
                   >
-                    website
+                    website{" "}
+                    <img
+                      src={openNewTab}
+                      alt="Open in new tab"
+                      className="inline w-4 h-4 ml-1"
+                    />
                   </a>
                 </div>
               </div>

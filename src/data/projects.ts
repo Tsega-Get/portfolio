@@ -1,6 +1,7 @@
 // This interface defines the "blueprint" for a project object.
 
-import { portfolio } from "../assets";
+import { portfolio, github, webIcon } from "../assets";
+
 export interface Project {
   id: number;
   name: string;
@@ -11,6 +12,7 @@ export interface Project {
   }[];
   image: string; // Path to the project image in your /public folder
   source_code_link: string;
+  icon?: string; // Optional icon field
 }
 
 // This is the array of your projects.
@@ -19,14 +21,15 @@ export const projects: Project[] = [
     id: 1,
     name: "Nexus",
     description:
-      "A comprehensive social media platform enabling users to connect, share updates, and engage with a community through a dynamic and interactive feed.",
+      "Nexus revolutionizes Air Traffic Management by transforming operational rooms into dynamic, paperless environments where it is easy to control what data and documents are available at the working position.",
     tags: [
       { name: "react", color: "text-blue-500" },
       { name: "django", color: "text-green-500" },
       { name: "mantine", color: "text-pink-500" },
     ],
     image: portfolio, // Example path
-    source_code_link: "#",
+    source_code_link: "https://www.tern.systems/nexus",
+    icon: webIcon,
   },
   {
     id: 2,
@@ -40,6 +43,7 @@ export const projects: Project[] = [
     ],
     image: portfolio,
     source_code_link: "#",
+    icon: webIcon,
   },
   {
     id: 3,
@@ -53,6 +57,7 @@ export const projects: Project[] = [
     ],
     image: portfolio,
     source_code_link: "#",
+    icon: webIcon,
   },
   {
     id: 4,
@@ -66,6 +71,7 @@ export const projects: Project[] = [
     ],
     image: portfolio,
     source_code_link: "#",
+    icon: webIcon,
   },
   {
     id: 5,
@@ -79,5 +85,6 @@ export const projects: Project[] = [
     ],
     image: portfolio,
     source_code_link: "https://github.com/Tsega-Get/portfolio",
+    icon: github,
   },
 ];

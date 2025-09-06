@@ -1,14 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Tilt from "react-parallax-tilt";
 
 // Import your project data
 import { projects } from "../data/projects";
 import type { Project } from "../data/projects";
 // Import your animation variants if you have them in a separate file
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
-import { github } from "../assets";
-
 // Define the types for the ProjectCard props
 interface ProjectCardProps extends Project {
   index: number;
@@ -21,16 +18,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   tags,
   image,
   source_code_link,
+  icon,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        tiltMaxAngleX={15}
-        tiltMaxAngleY={15}
-        scale={1.05}
-        transitionSpeed={450}
-        className="bg-gray-800 p-5 rounded-2xl sm:w-[360px] w-full h-full flex flex-col bg-gradient-to-b from-purple-600/20 to-blue-500/20 border border-purple-500/50"
-      >
+      <div className="bg-gray-800 p-5 rounded-2xl sm:w-[360px] w-full h-full flex flex-col bg-gradient-to-b from-purple-600/20 to-blue-500/20 border border-purple-500/50">
         <div className="relative w-full h-[230px]">
           <div className=" inset-0 bg-opacity-50 rounded-2xl z-0 p-16">
             <img
@@ -40,19 +32,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             />
           </div>
           <div className="absolute inset-0 flex justify-end m-3">
-            <a
-              href={source_code_link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:opacity-80 transition-opacity"
-            >
-              {/* You can use an icon here, e.g., from react-icons */}
-              <img
-                src={github}
-                alt="GitHub"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </a>
+            {source_code_link !== "#" && (
+              <a
+                href={source_code_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src={icon}
+                  alt="link"
+                  className="max-w-[50%] max-h-[50%] object-contain"
+                />
+              </a>
+            )}
           </div>
         </div>
 
@@ -71,7 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </p>
           ))}
         </div>
-      </Tilt>
+      </div>
     </motion.div>
   );
 };

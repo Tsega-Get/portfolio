@@ -12,12 +12,12 @@ export interface Experience {
 // This is the actual data for your experiences, stored in an array.
 export const experiences: Experience[] = [
   {
-    title: "Full-Stack Developer",
-    company_name: "Innovate Solutions Inc.",
-    icon: "/assets/images/company-innovate.png", // Example path to company logo
+    title: "Software Engineer (Ethiopia | TBD) ",
+    company_name: "Tern systems",
+    icon: "/assets/images/company-innovate.png",
     iconBg: "#383E56",
-    date: "Jan 2023 - Present",
-    website: "https://innovatesolutions.example.com",
+    date: "Dec 2022 - Present",
+    website: "https://www.tern.systems/",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers and product managers to create high-quality products.",
@@ -26,23 +26,38 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Mobile First Co.",
-    icon: "/assets/images/company-mobilefirst.png", // Example path to company logo
-    iconBg: "#E6DEDD",
-    date: "Sep 2021 - Dec 2022",
-    website: "https://mobilefirst.example.com",
+    title: "Programmer",
+    company_name: "Ethioden Consultancy PLC",
+    icon: "/assets/images/company-innovate.png",
+    iconBg: "#383E56",
+    date: "Nov 2022 - Present",
+    website: "https://ethioden.com/",
     points: [
-      "Designed and developed cross-platform mobile applications for iOS and Android using React Native.",
-      "Worked with native modules when required to achieve platform-specific functionality.",
-      "Managed application state using Redux for predictable and maintainable code.",
-      "Published applications to the Apple App Store and Google Play Store.",
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers and product managers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Full-Stack Developer",
+    company_name: "Poshak consultancy PLC",
+    icon: "/assets/images/company-mobilefirst.png",
+    iconBg: "#E6DEDD",
+    date: "Jan 2022 - Sep 2022",
+    website: "#",
+    points: [
+      "Developed responsive and dynamic web applications using Vue.js and Vuetify.",
+      "Built and maintained RESTful APIs using LoopBack for Node.js backend.",
+      "Implemented state management with Vuex for scalable and maintainable applications.",
+      "Optimized frontend performance and user experience across different devices.",
+      "Collaborated with team members to integrate backend services and ensure smooth data flow.",
     ],
   },
   {
     title: "Web Development Intern",
     company_name: "Creative Agency",
-    icon: "/assets/images/company-creative.png", // Example path to company logo
+    icon: "/assets/images/company-creative.png",
     iconBg: "#383E56",
     date: "Jun 2021 - Aug 2021",
     website: "https://creativeagency.example.com",
