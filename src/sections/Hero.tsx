@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="w-5 h-5 rounded-full bg-blue-500" />
           <div className="w-[2px] h-40 sm:h-80 bg-gradient-to-b from-blue-500 via-violet-500 to-transparent" />
         </div>
-        <div className="flex flex-col gap-5 w-full">
+        <div className="flex flex-col gap-5 w-full h-full">
           <div className=" rounded-md p-5 min-w-[300px]">
             <p className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-gray-100 bg-clip-text text-transparent mb-4 sm:text-3xl">
               Hi, I'm <span className="text-[#915EFF]">Tsega</span>
@@ -32,7 +32,7 @@ const Hero = () => {
               />
             </p>
           </div>
-          <div className="flex items-center justify-center rounded-md">
+          <div className="flex items-center justify-center rounded-md w-full h-full max-h-screen p-5">
             {/* Directly use the spline-viewer */}
             {/* @ts-expect-error  ignore('spline-viewer' does not exist on type 'JSX.IntrinsicElements')*/}
             <spline-viewer url="https://prod.spline.design/dfS1u48OjIBqHrpd/scene.splinecode"></spline-viewer>
