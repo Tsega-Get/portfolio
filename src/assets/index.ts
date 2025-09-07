@@ -3,6 +3,9 @@ import mathwork from "./company/mathwork.png";
 import edunet from "./company/edunet.png";
 import eduskill from "./company/eduskill.png";
 
+// Import no image placeholder
+import noImage from "./no-image.png";
+
 // Import tech stack images
 import python from "./tech-stack/python.png";
 import java from "./tech-stack/java.png";
@@ -13,10 +16,11 @@ import backendIcon from "./services/backend.svg";
 import frontendIcon from "./services/frontend.svg";
 import databaseIcon from "./services/database.svg";
 import devopsIcon from "./services/devops.svg";
+import mobileAppIcon from "./services/mobile-app.png";
 
 //project images
 import portfolio from "./projects/portfolio.png";
-import face from "./face.png";
+import cbhi from "./projects/cbhi.png";
 
 // Import tech logos
 import css from "./tech/css.png";
@@ -34,6 +38,7 @@ import mongo from "./tech/mongo.png";
 import ts from "./tech/ts.png";
 
 // Import common assets
+import face from "./face.png";
 import logo from "./logo.svg";
 import github from "./github.png";
 import menu from "./menu.svg";
@@ -73,4 +78,7 @@ export {
   face,
   webIcon,
   openNewTab,
+  mobileAppIcon,
+  cbhi,
+  noImage,
 };

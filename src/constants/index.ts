@@ -20,6 +20,7 @@ import {
   mongo,
   ts,
   portfolio,
+  mobileAppIcon,
 } from "../assets";
 
 export const navLinks = [
@@ -42,6 +43,7 @@ export const services = [
   { title: "Backend APIs", icon: backendIcon },
   { title: "Frontend Development", icon: frontendIcon },
   { title: "Database Design", icon: databaseIcon },
+  { title: "Flutter & React native", icon: mobileAppIcon },
   { title: "DevOps / CI-CD", icon: devopsIcon },
 ];
 export const projectsImages = [

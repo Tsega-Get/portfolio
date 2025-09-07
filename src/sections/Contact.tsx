@@ -1,6 +1,18 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaTelegramPlane,
+  FaWhatsapp,
+} from "react-icons/fa";
+
+// Environment variables for EmailJS
+const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "+251930412310"; // Default number if not set
 
 // --- TYPE DEFINITIONS ---
 interface FormState {
@@ -87,10 +99,6 @@ const Contact = () => {
 
     setLoading(true);
 
-    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
     const templateParams = {
       from_name: form.name,
       to_name: import.meta.env.VITE_RECEIVER_NAME,
@@ -128,9 +136,56 @@ const Contact = () => {
           transition={{ type: "tween", duration: 0.8, ease: "easeOut" }}
           className="bg-gray-800 p-8 rounded-2xl w-full max-w-3xl mx-auto"
         >
-          <h3 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
-            Contact Me.
-          </h3>
+          <div
+            className="flex-1 flex flex-col items-end gap-3 mt-2 
+                 text-gray-300 text-[17px] ring-1 ring-gray-600 
+                 rounded-md p-4 leading-[30px]"
+          >
+            <div className="flex flex-row gap-5">
+              <p className="font-semibold">Contact me with:</p>
+
+              {/* WhatsApp Chat Link */}
+              <a
+                href={`https://wa.me/${whatsappNumber}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Chat on WhatsApp" // This is the tooltip
+                className="flex items-center gap-3 text-gray-300 hover:text-green-500 transition-colors duration-300"
+              >
+                <FaWhatsapp size={28} />
+              </a>
+              {/* Telegram */}
+              <a
+                href="https://t.me/Tsega_get"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Telegram" // This creates the tooltip on hover
+                className="text-gray-300 hover:text-cyan-400 transition-colors duration-300"
+              >
+                <FaTelegramPlane size={28} />
+              </a>
+              {/* Facebook */}
+              <a
+                href="https://web.facebook.com/tsega.getnet.77/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Facebook" // Tooltip text
+                className="text-gray-300 hover:text-blue-500 transition-colors duration-300"
+              >
+                <FaFacebook size={28} />
+              </a>
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/tsega-getnet-235908233/" // Replace with your link
+                target="_blank"
+                rel="noopener noreferrer"
+                title="LinkedIn" // Tooltip text
+                className="text-gray-300 hover:text-blue-600 transition-colors duration-300"
+              >
+                <FaLinkedin size={28} />
+              </a>
+            </div>
+          </div>
 
           <form
             ref={formRef}

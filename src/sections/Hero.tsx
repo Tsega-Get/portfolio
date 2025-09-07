@@ -20,7 +20,11 @@ const Hero = () => {
             I do{" "}
             <Typewriter
               options={{
-                strings: ["Full-Stack Development", "AI & ML", "NLP"],
+                strings: [
+                  "Full-Stack Development",
+                  "Mobile APP development",
+                  "API Development",
+                ],
                 autoStart: true,
                 loop: true,
                 deleteSpeed: "natural",
@@ -30,7 +34,7 @@ const Hero = () => {
         </div>
 
         {/* Directly use the spline-viewer */}
-        {/* @ts-expect-error */}
+        {/* @ts-expect-error  ignore('spline-viewer' does not exist on type 'JSX.IntrinsicElements')*/}
         <spline-viewer url="https://prod.spline.design/dfS1u48OjIBqHrpd/scene.splinecode"></spline-viewer>
       </div>
     </section>

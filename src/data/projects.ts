@@ -1,6 +1,6 @@
 // This interface defines the "blueprint" for a project object.
 
-import { portfolio, github, webIcon } from "../assets";
+import { portfolio, github, webIcon, cbhi, noImage } from "../assets";
 
 export interface Project {
   id: number;
@@ -27,7 +27,7 @@ export const projects: Project[] = [
       { name: "django", color: "text-green-500" },
       { name: "mantine", color: "text-pink-500" },
     ],
-    image: portfolio, // Example path
+    image: noImage,
     source_code_link: "https://www.tern.systems/nexus",
     icon: webIcon,
   },
@@ -41,7 +41,7 @@ export const projects: Project[] = [
       { name: "mongo db", color: "text-green-500" },
       { name: "beautify", color: "text-pink-500" },
     ],
-    image: portfolio,
+    image: noImage,
     source_code_link: "#",
     icon: webIcon,
   },
@@ -55,7 +55,7 @@ export const projects: Project[] = [
       { name: "mysql", color: "text-green-500" },
       { name: "css", color: "text-pink-500" },
     ],
-    image: portfolio,
+    image: cbhi,
     source_code_link: "#",
     icon: webIcon,
   },
@@ -63,13 +63,13 @@ export const projects: Project[] = [
     id: 4,
     name: "University Guest Information Desk",
     description:
-      "A web application for university visitors, providing campus maps, event schedules, department directories, and essential information to enhance their visit.",
+      "A desktop & web application for university visitors, providing campus maps, event schedules, department directories, and essential information to enhance their visit.",
     tags: [
       { name: "java", color: "text-blue-500" },
       { name: "mysql", color: "text-green-500" },
       { name: "api", color: "text-pink-500" },
     ],
-    image: portfolio,
+    image: noImage,
     source_code_link: "#",
     icon: webIcon,
   },

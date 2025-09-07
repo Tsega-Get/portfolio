@@ -5,8 +5,9 @@ export interface Experience {
   icon: string; // Path to company logo image
   iconBg: string; // Background color for the icon container
   date: string;
-  website?: string; // Optional: URL to the company's website
+  link?: string; // Optional: URL to the company's website
   points: string[]; // An array of bullet points for responsibilities and achievements
+  showCase?: string; // Optional: A label for showcasing the experience, e.g., "website"
 }
 
 // This is the actual data for your experiences, stored in an array.
@@ -17,7 +18,8 @@ export const experiences: Experience[] = [
     icon: "/assets/images/company-innovate.png",
     iconBg: "#383E56",
     date: "Dec 2022 - Present",
-    website: "https://www.tern.systems/",
+    showCase: "website",
+    link: "https://www.tern.systems/",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers and product managers to create high-quality products.",
@@ -31,7 +33,8 @@ export const experiences: Experience[] = [
     icon: "/assets/images/company-innovate.png",
     iconBg: "#383E56",
     date: "Nov 2022 - Present",
-    website: "https://ethioden.com/",
+    showCase: "website",
+    link: "https://ethioden.com/",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers and product managers to create high-quality products.",
@@ -41,11 +44,12 @@ export const experiences: Experience[] = [
   },
   {
     title: "Full-Stack Developer",
-    company_name: "Poshak consultancy PLC",
+    company_name: "Poshak Consultancy Services PLC",
     icon: "/assets/images/company-mobilefirst.png",
     iconBg: "#E6DEDD",
     date: "Jan 2022 - Sep 2022",
-    website: "#",
+    showCase: "linked-in",
+    link: "https://www.linkedin.com/company/poshak-consultancy-services-plc-eth/about/",
     points: [
       "Developed responsive and dynamic web applications using Vue.js and Vuetify.",
       "Built and maintained RESTful APIs using LoopBack for Node.js backend.",
@@ -56,16 +60,16 @@ export const experiences: Experience[] = [
   },
   {
     title: "Web Development Intern",
-    company_name: "Creative Agency",
+    company_name: "ANRS-STICC",
     icon: "/assets/images/company-creative.png",
     iconBg: "#383E56",
-    date: "Jun 2021 - Aug 2021",
-    website: "https://creativeagency.example.com",
+    date: "Oct 2019 - Jan 2020",
+    showCase: "Facebook",
+    link: "https://web.facebook.com/profile.php?id=100067560995785&sk=following",
     points: [
       "Assisted the senior development team in building and styling web pages using HTML, CSS, and JavaScript.",
       "Learned and applied the fundamentals of the React framework in a professional environment.",
       "Participated in daily stand-up meetings and contributed to project planning.",
-      "Gained experience with version control systems, primarily Git and GitHub.",
     ],
   },
 ];
