@@ -21,9 +21,9 @@ const Navbar = () => {
               onClick={closeMobileMenu}
             >
               <div className="relative inline-flex items-center justify-center rounded-full bg-[radial-gradient(circle,white,transparent_50%)] p-1">
-                <img src={face} alt="me" className="h-8 w-8 object-cover" />
+                <img src={face} alt="icon" className="h-8 w-8 object-cover" />
               </div>
-              <div>ME</div>
+              <div>TSEGA</div>
             </Link>
           </div>
 

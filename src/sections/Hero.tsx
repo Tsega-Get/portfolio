@@ -12,10 +12,10 @@ const Hero = () => {
           <div className="w-[2px] h-40 sm:h-80 bg-gradient-to-b from-blue-500 via-violet-500 to-transparent" />
         </div>
 
-        <div>
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-500 to-gray-100 bg-clip-text text-transparent mb-4 sm:text-7xl">
-            Hi, I'm <span className="text-[#915EFF]">...</span>
-          </h1>
+        <div className="ring-1 ring-blue-500/20 rounded-md p-5 min-w-[300px]">
+          <p className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-gray-100 bg-clip-text text-transparent mb-4 sm:text-3xl">
+            Hi, I'm <span className="text-[#915EFF]">Tsega</span>
+          </p>
           <p className="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2">
             I do{" "}
             <Typewriter

@@ -143,14 +143,13 @@ const Contact = () => {
           >
             <div className="flex flex-row gap-5">
               <p className="font-semibold">Contact me with:</p>
-
               {/* WhatsApp Chat Link */}
               <a
                 href={`https://wa.me/${whatsappNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Chat on WhatsApp" // This is the tooltip
-                className="flex items-center gap-3 text-gray-300 hover:text-green-500 transition-colors duration-300"
+                className="text-gray-300 hover:text-green-500 transition-colors duration-300"
               >
                 <FaWhatsapp size={28} />
               </a>
