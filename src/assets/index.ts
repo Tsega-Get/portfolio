@@ -4,7 +4,7 @@ import edunet from "./company/edunet.png";
 import eduskill from "./company/eduskill.png";
 
 // Import no image placeholder
-import noImage from "./no-image.png";
+import noImage from "./no-image.svg";
 
 // Import tech stack images
 import python from "./tech-stack/python.png";
