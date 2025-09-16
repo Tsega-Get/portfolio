@@ -37,10 +37,10 @@ const ExperienceSection = () => {
     <section id="experience" className="--color-black-100 py-16 sm:py-24">
       <div className="container mx-auto px-4">
         {/* Section Title */}
-        <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
+        <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider text-center">
           What i have done so far!
         </p>
-        <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-500 to-gray-100 bg-clip-text text-transparent sm:text-5xl">
+        <h2 className="text-4xl font-bold text-center mb-12 sm:text-5xl bg-gradient-to-r from-blue-500 to-gray-100 bg-clip-text [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
           Work Experience
         </h2>
 
